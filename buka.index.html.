@@ -1,0 +1,102 @@
+# index.html.
+gimana caranya???
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ini apa sebenernya? aku iseng aja lagi belajar coding</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#fff0f5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    width:85%;
+    max-width:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff5e8a;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff3b73;
+}
+
+#pesan{
+    display:none;
+    animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div id="awal">
+<h>kamu ikutin aja deh ya</h></h2>
+<p>Kalau kamu siap, tekan tombol di bawah ini😅</p>
+
+<button onclick="buka()">Buka Surat 💌</button>
+</div>
+
+<div id="pesan">
+<h2>HALOOOOOOO!!!!</h2>
+
+<p>
+Makasiiii banyak yaaaa, udah mau denger cerita² akuuu!!! 
+Aku lebih tertarik duduk di kursi rumah aku sambil cerita dibandingkan hal lain yang kita lakuin.
+</p>
+
+<p>
+TAPI GUE KESEL SAMA LO
+karena sifat kamu lebih mirip FIRAUN MESIR
+</p>
+
+<p>
+aduh
+btw keren ga?
+😹🤟
+</p>
+
+<h3>tos dulu 👊</h3>
+
+</div>
+
+</div>
+
+<script>
+function buka(){
+document.getElementById("awal").style.display="none";
+document.getElementById("pesan").style.display="block";
+}
+</script>
+
+</body>
+</html>
